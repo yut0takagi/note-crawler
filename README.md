@@ -12,13 +12,14 @@ A tiny, dependency-light Python toolkit that turns any creator page into a clean
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 [![Made with httpx](https://img.shields.io/badge/built%20with-httpx-005571.svg)](https://www.python-httpx.org/)
 
-```bash
-$ note-crawl ishida_yuko
-creator: 石田裕子（サイバーエージェント専務執行役員） notes=126
-saved: 継続することの難しさと意義について…
-saved: 「働きがい」と「経済成長」は両立できるのか。…
-... (124 more) ...
-done: 126 articles -> out/ishida_yuko
+```console
+$ note-crawl your-favourite-creator
+creator: Your Favourite Creator  notes=126
+saved: Why I started writing on note…
+saved: A field guide to product taste…
+saved: On building things that last…
+   … (123 more) …
+done: 126 articles → out/your-favourite-creator
 ```
 
 </div>
@@ -90,7 +91,7 @@ key: "n195aa4cc08c5"
 
 ## 🛠 CLI Reference
 
-```
+```text
 note-crawl <target> [options]
 ```
 
@@ -142,7 +143,7 @@ with NoteClient() as client:
 
 ## 🏗 How it works
 
-```
+```text
 ┌──────────────┐    GET /api/v2/creators/{urlname}
 │   Crawler    │ ─────────────────────────────────► Creator profile
 │              │
