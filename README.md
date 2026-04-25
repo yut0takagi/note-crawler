@@ -6,11 +6,12 @@
 
 A tiny, dependency-light Python toolkit that turns any creator page into a clean, offline-readable corpus of JSON + Markdown.
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/note-crawler.svg?logo=pypi&logoColor=white&color=3776AB)](https://pypi.org/project/note-crawler/)
+[![Python 3.9+](https://img.shields.io/pypi/pyversions/note-crawler.svg?logo=python&logoColor=white)](https://pypi.org/project/note-crawler/)
+[![Downloads](https://img.shields.io/pypi/dm/note-crawler.svg?color=brightgreen)](https://pypi.org/project/note-crawler/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](#-license)
-[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![CI](https://github.com/yut0takagi/note-crawler/actions/workflows/ci.yml/badge.svg)](https://github.com/yut0takagi/note-crawler/actions/workflows/ci.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
-[![Made with httpx](https://img.shields.io/badge/built%20with-httpx-005571.svg)](https://www.python-httpx.org/)
 
 </div>
 
@@ -44,12 +45,19 @@ done: 126 articles → out/your-favourite-creator
 ### 1. Install
 
 ```bash
-git clone <this-repo>
-cd note-crawler
-pip install -e .
+pip install note-crawler
 ```
 
-> Need dev tooling? `pip install -e ".[dev]"`
+<details>
+<summary>From source (for hacking on the package)</summary>
+
+```bash
+git clone https://github.com/yut0takagi/note-crawler.git
+cd note-crawler
+pip install -e ".[dev]"
+```
+
+</details>
 
 ### 2. Crawl
 
