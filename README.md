@@ -12,6 +12,8 @@ A tiny, dependency-light Python toolkit that turns any creator page into a clean
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 [![Made with httpx](https://img.shields.io/badge/built%20with-httpx-005571.svg)](https://www.python-httpx.org/)
 
+</div>
+
 ```console
 $ note-crawl your-favourite-creator
 creator: Your Favourite Creator  notes=126
@@ -22,7 +24,6 @@ saved: On building things that last…
 done: 126 articles → out/your-favourite-creator
 ```
 
-</div>
 
 ---
 
