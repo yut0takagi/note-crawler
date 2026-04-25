@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "note-crawler"
+version = "0.1.0"
+description = "Crawl all articles from a note.com creator"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "yutotkg" }]
+dependencies = [
+    "httpx>=0.27",
+    "html2text>=2024.2.26",
+    "tenacity>=8.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-httpx>=0.30"]
+
+[project.scripts]
+note-crawl = "note_crawler.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/note_crawler"]
